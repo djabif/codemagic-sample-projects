@@ -5,7 +5,10 @@
   "webDir": "dist",
   "plugins": {
     "LiveUpdate": {
-      "appId": "e614f434-d0a5-402b-bebe-7eeb17d52095"
+      "appId": "e614f434-d0a5-402b-bebe-7eeb17d52095",
+      "autoUpdateStrategy": "background",
+      "autoBlockRolledBackBundles": true,
+      "readyTimeout": 10000
     },
     "SplashScreen": {
       "launchShowDuration": 0

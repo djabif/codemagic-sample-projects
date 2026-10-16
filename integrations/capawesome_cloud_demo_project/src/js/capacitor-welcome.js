@@ -43,9 +43,12 @@ window.customElements.define(
           await Browser.open({ url: input });
         });
 
-      // Automatically download and set the latest bundle
-      LiveUpdate.sync().then(() => {
-        console.log("LiveUpdate sync completed");
+      // With `autoUpdateStrategy: "background"` in capacitor.config.json the
+      // plugin checks for, downloads and applies updates on its own. Calling
+      // `ready()` signals that the current bundle started successfully, so a
+      // broken update is rolled back automatically.
+      LiveUpdate.ready().then(() => {
+        console.log("LiveUpdate ready");
       });
     }
   },

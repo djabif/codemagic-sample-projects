@@ -84,6 +84,7 @@
 
 ### Other
 
+* [Capawesome Cloud](https://github.com/codemagic-ci-cd/codemagic-sample-projects/tree/main/integrations/capawesome_cloud_demo_project)
 * [Capgo](https://github.com/codemagic-ci-cd/codemagic-sample-projects/tree/main/integrations/capgo_integration_demo_project)
 
 
